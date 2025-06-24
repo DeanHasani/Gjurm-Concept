@@ -6,32 +6,32 @@ const services = [
   {
     title: "Brand Strategy",
     description: "Comprehensive brand development and positioning strategies that resonate with your target audience.",
-    icon: "🎯"
+    icon: "/gifs/strategy.gif",
   },
   {
     title: "Digital Marketing",
     description: "Multi-channel digital campaigns designed to maximize reach and engagement across all platforms.",
-    icon: "📱"
+    icon: "/gifs/marketing.gif"
   },
   {
     title: "Content Creation",
     description: "Compelling visual and written content that tells your brand story and drives conversions.",
-    icon: "✨"
+    icon: "/gifs/creation.gif"
   },
   {
     title: "Social Media",
     description: "Strategic social media management and growth across Instagram, Facebook, and LinkedIn.",
-    icon: "📸"
+    icon: "/gifs/socialmedia.gif"
   },
   {
     title: "Web Development",
     description: "Modern, responsive websites that convert visitors into customers and reflect your brand identity.",
-    icon: "💻"
+    icon: "/gifs/web.gif"
   },
   {
     title: "Analytics & Insights",
     description: "Data-driven insights and reporting to optimize performance and maximize your marketing ROI.",
-    icon: "📊"
+    icon: "/gifs/analytics.gif"
   }
 ];
 
@@ -59,7 +59,8 @@ export const ServicesSection = () => {
             <AnimatedSection key={service.title} delay={index * 100}>
               <Card className="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-0 shadow-md">
                 <CardHeader className="text-center pb-4">
-                  <div className="text-4xl mb-4">{service.icon}</div>
+                  <div className="text-4xl mb-4 flex justify-center">
+                    {service.icon.endsWith('.gif') ? ( <img src={service.icon} alt={`${service.title} icon`} className="w-12 h-12" />) : (<span>{service.icon}</span>)}</div>
                   <CardTitle className="font-inter font-semibold text-xl text-gray-900">
                     {service.title}
                   </CardTitle>

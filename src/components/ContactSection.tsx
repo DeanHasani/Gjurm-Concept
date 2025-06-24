@@ -34,14 +34,16 @@ export const ContactSection = () => {
               size="lg"
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-medium rounded-full transition-all duration-300 hover:scale-105"
             >
-              📱 WhatsApp
+              <img src="/uploads/whatsapp.png" alt="WhatsApp" className="w-6 h-6" />
+              WhatsApp
             </Button>
             <Button 
               onClick={handleInstagram}
               size="lg"
               className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 text-lg font-medium rounded-full transition-all duration-300 hover:scale-105"
             >
-              📸 Instagram
+              <img src="/uploads/instagram.png" alt="WhatsApp" className="w-6 h-6" />
+              Instagram
             </Button>
           </div>
         </AnimatedSection>

@@ -58,7 +58,7 @@ export const HeroSection = () => {
               size="lg"
               className="border-2 border-gray-300 hover:border-gray-400 px-8 py-4 text-lg font-medium rounded-full transition-all duration-300 hover:scale-105"
             >
-              View Our Work
+              What Do We Offer
             </Button>
           </div>
         </AnimatedSection>
