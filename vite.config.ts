@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/Gjurm-Concept/', 
+  base: mode === 'production' ? '/Gjurm-Concept/' : '/',
   server: {
     host: "::",
     port: 8080,
